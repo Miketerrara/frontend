@@ -1,0 +1,47 @@
+@import 'style.css';
+
+.container{
+    width:100%;
+    max-width:1280px;
+    margin: 0 auto;
+    height:80rem;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+}
+.block{
+    position:relative;
+    flex: 1 1 600px;
+    background-color: aqua;
+    margin-bottom:40rem;
+    margin-left:2rem;
+}
+.container__image01, .container__image02{
+    position:absolute;
+}
+.container__image02{
+    top:12rem;
+    left:12rem;
+}
+.container__txt{
+    flex: 1 1 600px;
+}
+.txt__title{
+    font:900 7rem/1 var(--ff);
+    color: var(--clr-green-normal);
+}
+.txt__desc{
+    font:400 1.8rem/1.5 var(--ff);
+    margin:2rem 8rem 1rem 0;
+    letter-spacing: .4px;
+}
+span::before{
+    content:"\a";
+    white-space: pre;
+}
+strong{
+    font-weight:900;
+    color: var(--clr-green-normal);
+}
