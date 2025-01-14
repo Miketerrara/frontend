@@ -8,7 +8,8 @@
     --clr-green-normal: #0B8558;
     --clr-black-normal: #383d38;
     --clr-background:#f5f7fa;
-    --ff: "nunito";
+    --ff: "Coiny", serif;
+    --sf: "Nunito", serif;
     --ts-normal-desc: 400 1.6rem var(--ff);
     --ts-normal-sub-title: 800 2.4rem var(--ff);
     --ts-extrabold-title: 800 4rem var(--ff);
@@ -51,16 +52,17 @@ hr{
 /*****************header******************/
 .menu{
     display:flex;
-    position:fixed;
+    position:absolute;
+    top:4rem;
     width:100%;
-    padding: 1rem 0;
+    padding: 0 2rem;
+    box-sizing:border-box;
     justify-content:space-between;
     flex-wrap:nowrap;
     align-items: center;
     background-color: var(--clr-green-normal);
-    height: 70px;
-    border-bottom-left-radius: 1.2rem;
-    border-bottom-right-radius:1.2rem;
+    height: 12rem;
+    border-radius: 2rem;
     z-index:3;
 }
 .logo{
@@ -163,19 +165,13 @@ hr{
         width:100%;
         padding: 1rem 0;
         background-color: var(--clr-green-normal);
-        height: 70px;
         max-width:1280px;
-        left:50%;
-        transform:translate(-50%);
         border-bottom-left-radius: 1.2rem;
         border-bottom-right-radius:1.2rem;
         z-index:2;
     }
     .logo{
-        position:absolute;
-        top:.8rem;
-        left:50%;
-        transform:translate(-50%, -50%);
+
     }
 }
 /*********************hero********************/
@@ -626,7 +622,7 @@ hr{
         justify-content: space-between;
     }
     .footer-info__desc{
-        font: 700 1.6rem var(--ff);
+        font: 700 1.6rem var(--sf);
         color: #ffffff;
         margin: 0 2.4rem;
         text-align: left;
