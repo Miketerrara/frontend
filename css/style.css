@@ -13,7 +13,7 @@
     --ts-normal-desc: 400 1.6rem var(--ff);
     --ts-normal-sub-title: 800 2.4rem var(--ff);
     --ts-extrabold-title: 800 4rem var(--ff);
-    --transition-normal: all .5s ease-in;
+    --transition-normal: all .45s ease-in;
 }
 
 html{
@@ -21,6 +21,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
+    position:relative;
     font-family: var(--ff);
     width:100%;
     margin:0 auto;
@@ -43,6 +44,7 @@ a{
 img{
     max-width:100%;
 }
+
 hr{
     width:100%;
     height:.4rem;
@@ -575,13 +577,15 @@ hr{
 
 /*****************footer********************/
 
+footer{
+    width:100%;
+    background: var(--clr-green-normal);
+}
 .footer{
     display:flex;
     justify-content: space-between;
     flex-direction: column;
-    width:100%;
     max-width:1280px;
-    background: var(--clr-green-normal);
     padding: 3.2rem 0 0;
     margin: 0 auto;
 }
@@ -611,7 +615,7 @@ hr{
     .footer{
         width:100%;
         background: var(--clr-green-normal);
-        padding: 3.2rem 0 2.4rem;
+        padding: 3.2rem 0 4rem;
         display:flex;
         justify-content: space-between;
         flex-wrap:nowrap;
@@ -625,14 +629,15 @@ hr{
         justify-content: space-between;
     }
     .footer-info__desc{
-        font: 700 1.6rem var(--sf);
+        font: 400 1.6rem var(--sf);
         color: #ffffff;
         margin: 0 2.4rem;
         text-align: left;
     }
     
     .footer-media{
-        margin: 0 2.4rem;
+        margin: 0 4rem;
         color: #ffffff;
+        font-size:4rem;
     }
 }
