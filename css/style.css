@@ -66,7 +66,7 @@ hr{
     z-index:3;
 }
 .logo{
-    margin: 6.4rem 2rem 0;
+    margin:-4rem 2rem 0;
 }
 
 .navbar, .navbar-two{
@@ -162,6 +162,7 @@ hr{
         display:none;
     }
     .menu{
+
         width:100%;
         padding: 1rem 0;
         background-color: var(--clr-green-normal);
@@ -169,9 +170,11 @@ hr{
         border-bottom-left-radius: 1.2rem;
         border-bottom-right-radius:1.2rem;
         z-index:2;
+        left: 50%;
+        transform: translate(-50%);
     }
     .logo{
-
+        margin:-4rem 2rem 0;
     }
 }
 /*********************hero********************/
@@ -589,7 +592,7 @@ hr{
 .footer-info__desc{
     display:flex;
     flex-direction:column;
-    font: 700 1.2rem var(--ff);
+    font: 700 1.2rem var(--sf);
     color: #ffffff;
     text-align:center;
     margin: 2.4rem auto;
